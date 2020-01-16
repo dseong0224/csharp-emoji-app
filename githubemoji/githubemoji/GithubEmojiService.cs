@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using System.Net.Http;
 
 namespace GithubEmojis
@@ -28,7 +29,7 @@ namespace GithubEmojis
                 }
                 catch (Exception ex)
                 {
-                    System.Console.WriteLine($"error: {ex.ToString()}");
+                    Console.WriteLine($"error: {ex.ToString()}");
                 }
             }
 

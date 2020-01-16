@@ -1,8 +1,11 @@
-﻿namespace GithubEmojis
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace GithubEmojis
 {
     public interface IGithubEmojiService
     {
-        System.Threading.Tasks.Task<System.Collections.Generic.IList<Emoji>> GetEmojis();
-        System.Collections.Generic.IList<Emoji> GetEmojisFrom(string content);
+        Task<IList<Emoji>> GetEmojis();
+        IList<Emoji> GetEmojisFrom(string content);
     }
 }
